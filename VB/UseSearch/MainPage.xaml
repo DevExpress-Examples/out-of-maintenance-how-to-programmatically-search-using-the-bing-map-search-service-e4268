@@ -1,0 +1,65 @@
+﻿<UserControl x:Class="UseSearch.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"        
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:dxm="http://schemas.devexpress.com/winfx/2008/xaml/map"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+             
+    mc:Ignorable="d"
+    d:DesignHeight="475" d:DesignWidth="915" >
+    <UserControl.Resources>
+        <sys:String x:Key="YourBingKey">
+            INSERT_YOUR_BING_KEY_HERE
+        </sys:String>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <dxm:MapControl Grid.Row="0" Grid.Column="0">
+            <dxm:ImageTilesLayer>
+                <dxm:ImageTilesLayer.DataProvider>
+                    <dxm:BingMapDataProvider BingKey="{Binding Source={StaticResource YourBingKey}}"/>
+                </dxm:ImageTilesLayer.DataProvider>
+            </dxm:ImageTilesLayer>
+            <dxm:InformationLayer>
+                <dxm:InformationLayer.DataProvider>
+                    <dxm:BingSearchDataProvider x:Name="searchDataProvider" ShowSearchPanel="False"
+                        BingKey="{Binding Source={StaticResource YourBingKey}}" 
+                        SearchCompleted="searchDataProvider_SearchCompleted" />
+                </dxm:InformationLayer.DataProvider>
+            </dxm:InformationLayer>
+        </dxm:MapControl>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal" >
+                <sdk:Label Width="153" Content="Keywords"/>                
+                <TextBox VerticalAlignment="Top" Width="153" Name="tbKeywords"  />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label Content="Location" Width="153" VerticalAlignment="Top" />
+                <TextBox VerticalAlignment="Top" Name="tbLocation" Width="153" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label  Content="Latitude"  Width="153"  />
+                <TextBox VerticalAlignment="Top" Name="tbLatitude" Width="153" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label Content="Longitude"  Width="153"/>
+                <TextBox Name="tbLongitude" Width="153" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <sdk:Label Content="startingIndex"  Width="153" />
+                <TextBox VerticalAlignment="Top" Width="153" Name="tbStartIndex" />
+            </StackPanel>
+            <Button Content="Search" Width="220" Name="button1" Margin="12" Click="search_Click" />
+            <ScrollViewer MaxHeight="800" HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible" 
+                          Width="266" Height="234">
+                <TextBlock Name="tbResults" Foreground="Red" />
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</UserControl>
