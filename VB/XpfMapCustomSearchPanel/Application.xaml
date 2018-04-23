@@ -1,0 +1,11 @@
+﻿<Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+             xmlns:System="clr-namespace:System;assembly=mscorlib" 
+             x:Class="XpfMapCustomSearchPanel.App"
+             >
+    <Application.Resources>
+
+        <System:String x:Key="DevExpress.Xpf.License">CC-2C-07-5B-50-A5-5A-66-B5-0C-72-D0-25-99-6A-F8-56-A8-70-73</System:String>
+
+    </Application.Resources>
+</Application>

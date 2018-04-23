@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpfMapCustomSearchPanel", "XpfMapCustomSearchPanel\XpfMapCustomSearchPanel.csproj", "{67517A1C-A22C-4CF5-BABE-B96D91DA41BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XpfMapCustomSearchPanel.Web", "XpfMapCustomSearchPanel.Web\XpfMapCustomSearchPanel.Web.csproj", "{FEBED498-9CEE-4758-8521-1271DA26CB4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67517A1C-A22C-4CF5-BABE-B96D91DA41BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67517A1C-A22C-4CF5-BABE-B96D91DA41BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67517A1C-A22C-4CF5-BABE-B96D91DA41BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67517A1C-A22C-4CF5-BABE-B96D91DA41BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBED498-9CEE-4758-8521-1271DA26CB4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBED498-9CEE-4758-8521-1271DA26CB4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBED498-9CEE-4758-8521-1271DA26CB4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBED498-9CEE-4758-8521-1271DA26CB4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
