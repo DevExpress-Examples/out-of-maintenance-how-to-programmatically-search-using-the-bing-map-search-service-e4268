@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainPage.xaml](./CS/XpfMapCustomSearchPanel/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/XpfMapCustomSearchPanel/MainPage.xaml.vb))
+* [MainPage.xaml.cs](./CS/XpfMapCustomSearchPanel/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/XpfMapCustomSearchPanel/MainPage.xaml.vb))
+<!-- default file list end -->
 # How to  programmatically search using the Bing Map Search service
 
 
