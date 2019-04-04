@@ -1,7 +1,7 @@
 <!-- default file list -->
 *Files to look at*:
 
-* [MainPage.xaml](./CS/UseSearch/MainPage.xaml) (VB: [MainPage.xaml.vb](./VB/UseSearch/MainPage.xaml.vb))
+* [MainPage.xaml](./CS/UseSearch/MainPage.xaml) (VB: [MainPage.xaml](./VB/UseSearch/MainPage.xaml))
 * [MainPage.xaml.cs](./CS/UseSearch/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/UseSearch/MainPage.xaml.vb))
 <!-- default file list end -->
 # How to  programmatically search using the Bing Map Search service
