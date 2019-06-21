@@ -5,6 +5,9 @@
 * [MainPage.xaml.cs](./CS/Searching/MainPage.xaml.cs) (VB: [MainPage.xaml.vb](./VB/Searching/MainPage.xaml.vb))
 <!-- default file list end -->
 # How to  programmatically search using the Bing Map Search service
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/e4268)**
+<!-- run online end -->
 
 
 <p>This example demonstrates how to create a custom search panel that searches for location, keywords and other parameters using the <a href="http://documentation.devexpress.com/#Silverlight/DevExpressXpfMapBingSearchDataProvider_Searchtopic"><u>BingSearchDataProvider.Search</u></a> method.<br />
